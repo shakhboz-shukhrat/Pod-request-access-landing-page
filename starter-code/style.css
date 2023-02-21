@@ -1,0 +1,331 @@
+@import url("https://fonts.googleapis.com/css2?family=Chivo&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+.hero {
+  position: absolute;
+  width: 888px;
+  height: 640px;
+  left: 552px;
+  top: 130px;
+  z-index: 0;
+}
+
+.main {
+  background: #121725;
+  height: 100vh;
+  width: 100vw;
+}
+
+.logo {
+  width: 134.85px;
+  height: 56px;
+  margin-top: 102px;
+  margin-left: 165px;
+}
+
+.content {
+  width: 723px;
+  height: 509px;
+  background: #121725;
+  margin-top: 103px;
+  margin-left: 165px;
+  z-index: 77;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.p1 {
+  width: 665px;
+  height: 62px;
+  font-family: "Chivo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 62px;
+  /* or 119% */
+  margin-top: 88px;
+  text-transform: uppercase;
+  color: #54e6af;
+}
+
+.p2 {
+  width: 665px;
+  height: 62px;
+  font-family: "Chivo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 62px;
+  /* or 119% */
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.p3 {
+  width: 445px;
+  height: 84px;
+  font-family: "Chivo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  /* or 156% */
+  margin-top: 24px;
+  color: #c2cbe5;
+}
+
+.email {
+  width: 427px;
+  height: 56px;
+  background: #2c344b;
+  border-radius: 28px;
+  outline: none;
+  margin-top: 40px;
+}
+
+.btn {
+  background: #54e6af;
+  box-shadow: 0px 2px 4px rgba(84, 230, 175, 0.14);
+  border-radius: 28px;
+  width: 162px;
+  height: 46px;
+  font-family: "Chivo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  /* identical to box height, or 200% */
+  color: #121725;
+}
+
+.client {
+  margin: 64px 20px;
+}
+
+.email {
+  display: flex;
+  width: 427px;
+  height: 56px;
+  margin-top: 40px;
+}
+
+.email-text {
+  height: 28px;
+  font-family: "Chivo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  /* identical to box height, or 200% */
+  margin-top: 10px;
+  margin-left: 32px;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+
+.btn {
+  background: #54e6af;
+  box-shadow: 0px 2px 4px rgba(84, 230, 175, 0.14);
+  border-radius: 28px;
+  margin-left: 137px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn:hover {
+  background: #b3ffe2;
+}
+
+.btn-text {
+  height: 28px;
+  font-family: "Chivo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  /* identical to box height, or 200% */
+  color: #121725;
+}
+
+.dot {
+  position: absolute;
+  left: 1208px;
+  top: 718px;
+}
+
+.hero-tablet {
+  display: none;
+}
+
+.hero-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    display: none;
+  }
+  .hero-tablet {
+    display: block;
+    position: absolute;
+    width: 491px;
+    height: 767px;
+    left: 277px;
+    top: 0px;
+    z-index: 0;
+  }
+  .logo {
+    margin-top: 50px;
+    margin-left: 39px;
+  }
+  .content {
+    width: 635px;
+    height: 509px;
+    margin-left: 39px;
+    margin-top: 152px;
+  }
+  .p1 {
+    width: 635px;
+    height: 112px;
+    font-family: "Chivo";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+    /* or 117% */
+    margin-top: 93px;
+    text-transform: uppercase;
+    color: #54e6af;
+  }
+  .dot {
+    position: absolute;
+    width: 232px;
+    height: 104px;
+    left: 30px;
+    top: 920px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .hero {
+    display: none;
+  }
+  .hero-tablet {
+    display: none;
+  }
+  .hero-mobile {
+    display: block;
+    position: absolute;
+    z-index: 0;
+    opacity: 0.1;
+  }
+  .logo {
+    position: relative;
+    z-index: 10;
+    margin-top: 62px;
+    margin-left: 120px;
+  }
+  .content {
+    -webkit-backface-visibility: visible;
+            backface-visibility: visible;
+    background-color: initial;
+    margin-top: 57px;
+    width: 100vw;
+    margin-left: 0px;
+  }
+  .p1 {
+    width: 327px;
+    height: 38px;
+    font-family: "Chivo";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 38px;
+    /* or 146% */
+    margin-left: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 0px;
+    color: #54e6af;
+  }
+  .p2 {
+    width: 327px;
+    height: 38px;
+    font-family: "Chivo";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 38px;
+    /* or 146% */
+    text-align: center;
+    text-transform: uppercase;
+    margin-left: 24px;
+    color: #fff;
+  }
+  .p3 {
+    width: 327px;
+    height: 100px;
+    font-family: "Chivo";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    /* or 167% */
+    margin-left: 24px;
+    text-align: center;
+    margin-top: 16px;
+    color: #c2cbe5;
+  }
+  .clients {
+    position: absolute;
+    width: 100vw;
+    height: 17px;
+    left: 0px;
+    top: 233px;
+    margin-left: 0px;
+  }
+  .client {
+    margin: 0px 0px;
+  }
+  .c1 {
+    width: 56px;
+    height: 17px;
+    margin-left: 25px;
+  }
+  .c2 {
+    width: 45px;
+    height: 17px;
+    margin-left: 23px;
+  }
+  .c3 {
+    width: 73px;
+    height: 11px;
+    margin-left: 23px;
+  }
+  .c4 {
+    width: 77px;
+    height: 15px;
+    margin-left: 23px;
+  }
+  .email {
+    position: absolute;
+    width: 327px;
+    height: 46px;
+    left: 24px;
+    top: 280px;
+  }
+  .btn {
+    position: absolute;
+    width: 327px;
+    height: 46px;
+    left: 0px;
+    top: 60px;
+    margin-left: 0px;
+  }
+}/*# sourceMappingURL=style.css.map */
